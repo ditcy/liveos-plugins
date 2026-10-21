@@ -1,10 +1,10 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "liveos",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shared personal records, files and reusable guidance across AI clients.",
   "author": {
-    "name": "Live OS",
+    "name": "Dmitrii T",
     "url": "https://liveos.world"
   },
   "homepage": "https://liveos.world/install/",
@@ -14,15 +14,17 @@
       "onboardingSkill": "./skills/setup/SKILL.md",
       "interface": {
         "displayName": "Live OS",
-        "shortDescription": "Your records, files and guidance across AI clients",
+        "shortDescription": "Records, files and guidance",
         "longDescription": "Save and retrieve personal records, original files, reusable programs and preferences in your own Live OS account. Includes workflows for reliable nutrition, training and shared knowledge.",
-        "developerName": "Live OS",
+        "developerName": "Dmitrii T",
         "category": "Productivity",
         "capabilities": [
           "Read",
           "Write"
         ],
-        "websiteURL": "https://liveos.world",
+        "websiteURL": "https://liveos.world/install/",
+        "supportURL": "https://github.com/ditcy/liveos-plugins/issues",
+        "termsOfServiceURL": "https://liveos.world/terms/",
         "privacyPolicyURL": "https://liveos.world/privacy/",
         "defaultPrompt": [
           "Show my saved recommendations.",

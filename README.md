@@ -1,6 +1,10 @@
 # Live OS plugins
 
-Version 0.1.0. Install instructions: https://liveos.world/install/
+Version 0.1.1. Install instructions: https://liveos.world/install/
+
+Developed by Dmitrii T. Currently free testing with direct-link distribution;
+not an approved public directory listing. Package links are public and are not
+an invitation or access-control mechanism. Each user authorizes their own account.
 
 - OpenAI: download liveos-openai.zip from Releases and upload as a custom plugin
   in supported ChatGPT/Codex clients. Connect the Live OS MCP server when prompted.
@@ -19,4 +23,5 @@ approval is separate from these publicly downloadable packages; no approval is
 implied. Client availability depends on the platform, plan and administrator.
 
 Privacy: https://liveos.world/privacy/
+Terms: https://liveos.world/terms/
 Support: https://github.com/ditcy/liveos-plugins/issues
