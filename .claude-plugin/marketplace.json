@@ -1,0 +1,13 @@
+{
+  "name": "liveos",
+  "owner": {
+    "name": "Live OS"
+  },
+  "plugins": [
+    {
+      "name": "liveos",
+      "source": "./plugins/claude",
+      "description": "Shared personal records, files and reusable guidance across AI clients."
+    }
+  ]
+}

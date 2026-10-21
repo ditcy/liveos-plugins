@@ -1,0 +1,13 @@
+{
+  "name": "liveos",
+  "version": "0.1.0",
+  "description": "Shared personal records, files and reusable guidance across AI clients.",
+  "author": {
+    "name": "Live OS",
+    "url": "https://liveos.world"
+  },
+  "homepage": "https://liveos.world/install/",
+  "repository": "https://github.com/ditcy/liveos-plugins",
+  "displayName": "Live OS",
+  "privacyPolicyUrl": "https://liveos.world/privacy/"
+}

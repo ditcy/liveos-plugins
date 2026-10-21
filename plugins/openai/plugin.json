@@ -1,0 +1,37 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "liveos",
+  "version": "0.1.0",
+  "description": "Shared personal records, files and reusable guidance across AI clients.",
+  "author": {
+    "name": "Live OS",
+    "url": "https://liveos.world"
+  },
+  "homepage": "https://liveos.world/install/",
+  "repository": "https://github.com/ditcy/liveos-plugins",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup/SKILL.md",
+      "interface": {
+        "displayName": "Live OS",
+        "shortDescription": "Your records, files and guidance across AI clients",
+        "longDescription": "Save and retrieve personal records, original files, reusable programs and preferences in your own Live OS account. Includes workflows for reliable nutrition, training and shared knowledge.",
+        "developerName": "Live OS",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://liveos.world",
+        "privacyPolicyURL": "https://liveos.world/privacy/",
+        "defaultPrompt": [
+          "Show my saved recommendations.",
+          "Summarize my day from Live OS records."
+        ],
+        "brandColor": "#75414A",
+        "composerIcon": "./assets/logo.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

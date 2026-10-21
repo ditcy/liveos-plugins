@@ -1,0 +1,10 @@
+# Nutrition data quality
+
+Treat a package label as evidence, not as a guess. Keep its source (`label`) and the consumed portion distinct from values per 100 g/ml.
+
+1. Read energy units before copying a number. `kcal` and `kJ` are different values. When both are printed, use the printed kcal. Never store a kJ number in a kcal field. When only kJ is available, calculate `kcal = kJ / 4.184`, state that it is converted, and retain enough source detail to check it later.
+2. Scale label values only after reading whether they are per 100 g/ml, per serving, or per package. For a per-100 label, multiply every numeric nutrient by consumed amount / 100. Do not round intermediate calculations; round only for display.
+3. Independently check the result using approximate macro energy: protein × 4 + carbohydrates × 4 + fat × 9. If stated energy and this check differ materially, reread the energy unit, decimal separator, serving size, portion and OCR text before saving. The printed kcal remains authoritative when legible: differences may result from rounding, fibre, polyols, alcohol or omitted nutrients, so never replace label kcal with 4/9/4 automatically.
+4. If a photo is unclear, do not promote a visual guess to `label`. Ask for a clearer photo or save a clearly marked `model_estimate` only when the user accepts an estimate.
+5. Before changing an existing entry, read its current version, identify the exact correction, update with `expected_version`, then use `aggregate` for the corrected day total.
+6. When the user says «второй», «ещё один», «повтори», `another`, `second` or otherwise refers to an ordinal food/drink entry, first read the relevant local day with `show_day_table` or `query_entries`. After the write, read that same day again and confirm only the verified number of matching items and the server-calculated day total. A successful `add_entries` result proves one new object was inserted; it does not prove that the object was the user's second item. If no earlier matching item is found, say that one is now recorded, never that a second was added.

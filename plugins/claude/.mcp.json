@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "liveos": {
+      "type": "http",
+      "url": "https://liveos.world/mcp"
+    }
+  }
+}
